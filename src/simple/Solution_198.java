@@ -7,7 +7,7 @@ public class Solution_198 {
      * @param args
      */
     public static void main ( String[] args ) {
-        int[] testArray = {2,7,9,3,1};
+        int[] testArray = {2,1,1,3};
 
 
         System.out.println (rob(testArray));
@@ -21,16 +21,25 @@ public class Solution_198 {
      * @return
      */
     public static int rob(int[] nums){
-        int sumOfOdd = 0;
-        int sumOfEven = 0;
-        for ( int i = 0; i < nums.length; i ++){
-            // 2019.4.8 丹姐：这是最高级的判断偶数的方法
-            if((i & 1) == 0){
-                sumOfEven += nums[i];
-            } else {
-                sumOfOdd += nums[i];
-            }
+        if(nums.length <= 0)
+            return 0;
+        if(nums.length == 1)
+            return nums[1];
+
+        int[] sums = new int[nums.length];
+
+        sums[0] = nums[0];
+        sums[1] = Math.max ( nums[0], nums[1] );
+        for ( int i = 2; i < nums.length; i ++) {
+//            // 2019.4.8 丹姐：这是最高级的判断偶数的方法
+//            if((i & 1) == 0){
+//                sumOfEven += nums[i];
+//            } else {
+//                sumOfOdd += nums[i];
+//            }
+            int temp = Math.max ( sums[i - 1], sums[i - 2] + nums[i] );
+            sums[i] = temp;
         }
-        return sumOfOdd > sumOfEven ? sumOfOdd : sumOfEven;
+        return sums[nums.length - 1];
     }
 }
