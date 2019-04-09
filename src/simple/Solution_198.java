@@ -24,7 +24,7 @@ public class Solution_198 {
         if(nums.length <= 0)
             return 0;
         if(nums.length == 1)
-            return nums[1];
+            return nums[0];
 
         int[] sums = new int[nums.length];
 
