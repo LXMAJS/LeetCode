@@ -86,9 +86,6 @@ public class Solution_22 {
         if(i < charArray.length){
             return false;
         }
-        else if(!stack.empty ()){
-            return false;
-        }
 
         return isValid;
     }
