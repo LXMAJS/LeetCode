@@ -1,0 +1,19 @@
+option = {
+  xAxis: {
+    type: 'category',
+    data: ${times}
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [{
+    data: ${caches},
+    type: 'line'
+  },{
+    data: ${runnings},
+    type: 'line'
+  },{
+    data: ${sum},
+    type: 'line'
+  }]
+};
