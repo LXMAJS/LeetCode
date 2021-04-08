@@ -2,3 +2,16 @@
 .vscode
 .idea/*
 node_modules
+/target/
+/.classpath
+/tmp/
+/.settings/
+/.idea/
+/*.iml
+/LeetCode/target
+/**/*.iml
+/**/target
+/**/rebel-remote.xml
+/**/rebel.xml
+
+/.scannerwork/

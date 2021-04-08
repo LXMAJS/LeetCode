@@ -7,10 +7,11 @@ import com.alibaba.fastjson.JSONObject;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class echartDataAnalysis {
 
-	static String filePath = "data/1.log";
+	static String filePath = "data/8.log";
 
 	public static void main(String[] args) {
 		InputStreamReader inputStream = null;
@@ -20,7 +21,7 @@ public class echartDataAnalysis {
 		List<Integer> sum = new ArrayList<Integer>();
 		try {
 
-			inputStream = new InputStreamReader(echartDataAnalysis.class.getClassLoader().getResourceAsStream(filePath));
+			inputStream = new InputStreamReader(Objects.requireNonNull(echartDataAnalysis.class.getClassLoader().getResourceAsStream(filePath)));
 			BufferedReader bufferedReader = new BufferedReader(inputStream);
 
 			String str = null;
@@ -66,24 +67,52 @@ public class echartDataAnalysis {
 
 	static String getTemplate() {
 		return "option = {\n" +
+				"  title: {\n" +
+				"    text: '任务小包折线图'\n" +
+				"  },\n" +
+				"  tooltip: {\n" +
+				"    trigger: 'axis'\n" +
+				"  },\n" +
+				"  legend: {\n" +
+				"    data: ['总数', 'CacheList', 'RunningList']\n" +
+				"  },\n" +
+				"  grid: {\n" +
+				"    left: '3%',\n" +
+				"    right: '4%',\n" +
+				"    bottom: '3%',\n" +
+				"    containLabel: true\n" +
+				"  },\n" +
+				"  toolbox: {\n" +
+				"    feature: {\n" +
+				"      saveAsImage: {}\n" +
+				"    }\n" +
+				"  },\n" +
 				"  xAxis: {\n" +
 				"    type: 'category',\n" +
+				"    boundaryGap: false,\n" +
 				"    data: ${times}\n" +
 				"  },\n" +
 				"  yAxis: {\n" +
 				"    type: 'value'\n" +
 				"  },\n" +
-				"  series: [{\n" +
-				"    data: ${caches},\n" +
-				"    type: 'line'\n" +
-				"  },{\n" +
-				"    data: ${runnings},\n" +
-				"    type: 'line'\n" +
-				"  },{\n" +
-				"    data: ${sum},\n" +
-				"    type: 'line'\n" +
-				"  }]\n" +
-				"};\n";
+				"  series: [\n" +
+				"    {\n" +
+				"      name: '总数',\n" +
+				"      type: 'line',\n" +
+				"      data: ${sum}\n" +
+				"    },\n" +
+				"    {\n" +
+				"      name: 'CacheList',\n" +
+				"      type: 'line',\n" +
+				"      data: ${caches}\n" +
+				"    },\n" +
+				"    {\n" +
+				"      name: 'RunningList',\n" +
+				"      type: 'line',\n" +
+				"      data: ${runnings}\n" +
+				"    }\n" +
+				"  ]\n" +
+				"};";
 	}
 }
 
