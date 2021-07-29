@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ccc20aea-9831-4b6e-af48-787d6ba37c4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cgbSmallPackage/code/createGraphData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/temp/code/createGraphData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cgbSmallPackage/code/createTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/temp/code/createTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cgbSmallPackage/code/echartDataAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/temp/code/echartDataAnalysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/LeetCode.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cgbSmallPackage/code/echartDataAnalysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cgbSmallPackage/code/echartDataAnalysis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/template.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medium/Solution_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medium/Solution_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cgbSmallPackage/code/echartDataAnalysis.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/temp/call20100/localPhoneSqlBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
+            <state relative-caret-position="615">
               <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -73,14 +67,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/medium/Solution_2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            <state relative-caret-position="213">
+              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
               <folding>
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#567#568#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1762#1763#0" expanded="true" />
+                <element signature="e#1783#1784#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/Queue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -88,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/simple/Solution_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="480">
               <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -180,9 +182,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="25" />
-    <option name="width" value="1680" />
-    <option name="height" value="1025" />
+    <option name="x" value="265" />
+    <option name="y" value="158" />
+    <option name="width" value="1415" />
+    <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -192,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,12 +233,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1627300148579" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1627543013612" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -263,13 +266,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.echartDataAnalysis">
-    <configuration name="Solution_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="simple.Solution_1" />
+  <component name="RunManager" selected="Application.Solution_2">
+    <configuration name="Solution_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="medium.Solution_2" />
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="simple.*" />
+          <option name="PATTERN" value="medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -330,19 +333,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution_1" />
       <item itemvalue="Application.echartDataAnalysis" />
       <item itemvalue="Application.createGraphData" />
       <item itemvalue="Application.createTestData" />
       <item itemvalue="Application.openApiHelper" />
+      <item itemvalue="Application.Solution_2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution_2" />
         <item itemvalue="Application.echartDataAnalysis" />
         <item itemvalue="Application.openApiHelper" />
         <item itemvalue="Application.createTestData" />
         <item itemvalue="Application.createGraphData" />
-        <item itemvalue="Application.Solution_1" />
       </list>
     </recent_temporary>
   </component>
@@ -368,18 +371,20 @@
       <workItem from="1619677346584" duration="705000" />
       <workItem from="1620725290872" duration="4801000" />
       <workItem from="1621140354704" duration="164000" />
-      <workItem from="1627300021165" duration="129000" />
+      <workItem from="1627300021165" duration="2229000" />
+      <workItem from="1627368507061" duration="4917000" />
+      <workItem from="1627538905219" duration="679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33242000" />
+    <option name="totallyTimeSpent" value="40938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23199023" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23687424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -388,7 +393,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3846939" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3846939" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3989796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,7 +401,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.40612245" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.26020408" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32959184" />
       <window_info anchor="bottom" id="Spring" order="13" />
@@ -414,6 +419,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/medium/Solution_2.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/simple/Solution_22.java">
@@ -590,6 +607,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/temp/call20100/localPhoneSqlBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/simple/Solution_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/data/localPhone1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -607,35 +651,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/temp/call20100/localPhoneSqlBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/simple/Solution_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/medium/Solution_2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="213">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
           <folding>
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1762#1763#0" expanded="true" />
+            <element signature="e#1783#1784#0" expanded="true" />
           </folding>
         </state>
       </provider>
