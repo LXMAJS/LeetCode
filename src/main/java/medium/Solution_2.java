@@ -23,7 +23,6 @@ import java.util.Queue;
 public class Solution_2 {
 
 	/**
-	 *
 	 * @param l1
 	 * @param l2
 	 * @return
@@ -80,46 +79,47 @@ public class Solution_2 {
 		root.print();
 
 	}
-}
 
-class ListNode {
-	int val;
-	ListNode next;
+	static class ListNode {
+		int val;
+		ListNode next;
 
-	ListNode() {
-	}
-
-	ListNode(int val) {
-		this.val = val;
-	}
-
-	ListNode(int val, ListNode next) {
-		this.val = val;
-		this.next = next;
-	}
-
-	static ListNode makeListNode(Queue<Integer> list) {
-		if (null == list || list.isEmpty()) {
-			return null;
+		ListNode() {
 		}
-		ListNode root = new ListNode(list.poll());
-		makeListNode(root, list);
-		return root;
-	}
-	private static void makeListNode(ListNode parent, Queue<Integer> list) {
-		if (null == list || list.isEmpty()) {
-			return;
-		}
-		ListNode node = new ListNode(list.poll());
-		makeListNode(node, list);
-		parent.next = node;
-	}
 
-	void print() {
-		System.out.print(val);
-		if (null != next) {
-			System.out.print("->");
-			next.print();
+		ListNode(int val) {
+			this.val = val;
+		}
+
+		ListNode(int val, ListNode next) {
+			this.val = val;
+			this.next = next;
+		}
+
+		static ListNode makeListNode(Queue<Integer> list) {
+			if (null == list || list.isEmpty()) {
+				return null;
+			}
+			ListNode root = new ListNode(list.poll());
+			makeListNode(root, list);
+			return root;
+		}
+
+		private static void makeListNode(ListNode parent, Queue<Integer> list) {
+			if (null == list || list.isEmpty()) {
+				return;
+			}
+			ListNode node = new ListNode(list.poll());
+			makeListNode(node, list);
+			parent.next = node;
+		}
+
+		void print() {
+			System.out.print(val);
+			if (null != next) {
+				System.out.print("->");
+				next.print();
+			}
 		}
 	}
 }
