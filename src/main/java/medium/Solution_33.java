@@ -50,22 +50,33 @@ public class Solution_33 {
 		if (right == left) {
 			return nums[right] == target ? right : -1;
 		}
+		// 判断数组区间
+		if (right - left == 1) {
+			// 如果小于等于1，那么说明只有左右两个元素
+			if (nums[left] == target) {
+				return left;
+			} else if (nums[right] == target) {
+				return right;
+			} else {
+				return -1;
+			}
+		}
 		int mid = (right - left) / 2 + left;
 		// 判断是不是这个元素
 		if (nums[mid] == target) {
 			return mid;
 		}
-		// 如果还没有找到，则继续查找
+		// 判断单调区间
 		if (nums[left] < nums[mid]) {
 			// 左边单调递增
-			if (nums[left] <= target && target < nums[mid]) {
+			if (nums[left] <= target && target <= nums[mid]) {
 				right = mid;
 			} else {
 				left = mid;
 			}
 		} else {
 			// 右边单调递增
-			if (nums[mid] <= target && target < nums[right]) {
+			if (nums[mid] <= target && target <= nums[right]) {
 				left = mid;
 			} else {
 				right = mid;
