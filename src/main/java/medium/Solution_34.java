@@ -36,4 +36,102 @@ package medium;
  */
 public class Solution_34 {
 
+	/**
+	 * 找到目标值在数组中的第一个位置
+	 * @param nums 数组
+	 * @param target 目标元素
+	 * @return 目标元素的第一个索引位置
+	 */
+	private static int firstIndexOf(int[] nums, int target) {
+		return firstIndexOf(nums, target, 0, nums.length - 1);
+	}
+
+	/**
+	 * 递归本体
+	 * @param nums 数字
+	 * @param target 目标元素
+	 * @param left 左值
+	 * @param right 右值
+	 * @return 下标
+	 */
+	private static int firstIndexOf(int[] nums, int target, int left, int right) {
+		// 如果仅剩2个或1个元素，那么判断一下
+		if (right - left <= 1) {
+			// 仅剩2个元素，分别判断一下
+			if (nums[left] == target) {
+				// 左值匹配，则返回左下标
+				return left;
+			} else if (nums[right] == target) {
+				// 右值匹配，则返回右下标
+				return right;
+			} else {
+				// 都不匹配，返回 -1
+				return -1;
+			}
+		}
+		// 元素的个数大于1，则进行一次二分
+		int mid = (right - left) / 2 + left;
+		return nums[mid] >= target ? firstIndexOf(nums, target, left, mid) : firstIndexOf(nums, target, mid, right);
+	}
+
+	/**
+	 * 找到目标值在数组中的最后一个位置
+	 * @param nums 数组
+	 * @param target 目标元素
+	 * @return 目标元素的第一个索引位置
+	 */
+	private static int lastIndexOf(int[] nums, int target) {
+		return lastIndexOf(nums, target, 0, nums.length - 1);
+	}
+
+	/**
+	 * 递归本体
+	 * @param nums 数字
+	 * @param target 目标元素
+	 * @param left 左值
+	 * @param right 右值
+	 * @return 下标
+	 */
+	private static int lastIndexOf(int[] nums, int target, int left, int right) {
+		// 如果仅剩2个或1个元素，那么判断一下
+		if (right - left <= 1) {
+			// 仅剩2个元素，分别判断一下
+			if (nums[right] == target) {
+				// 左值匹配，则返回左下标
+				return right;
+			} else if (nums[left] == target) {
+				// 右值匹配，则返回右下标
+				return left;
+			} else {
+				// 都不匹配，返回 -1
+				return -1;
+			}
+		}
+		// 元素的个数大于1，则进行一次二分
+		int mid = (right - left) / 2 + left;
+		return nums[mid] > target ? lastIndexOf(nums, target, left, mid) : lastIndexOf(nums, target, mid, right);
+	}
+
+	public static int[] searchRange(int[] nums, int target) {
+		int[] res = new int[]{-1, -1};
+		if (nums.length == 0) {
+			return res;
+		} else if (nums.length == 1) {
+			if (nums[0] == target) {
+				res = new int[] {0, 0};
+			}
+			return res;
+		}
+		res[0] = firstIndexOf(nums, target);
+		res[1] = lastIndexOf(nums, target);
+		return res;
+	}
+
+	public static void main(String[] args) {
+		int[] nums = new int[]{1};
+		int target = 1;
+
+		int[] res = searchRange(nums, target);
+		System.out.println("[" + res[0] + "," + res[1] + "]");
+	}
 }
