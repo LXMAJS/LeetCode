@@ -80,11 +80,8 @@ public class Solution_38 {
 					tempCount = 1;
 				}
 			}
-			// 收尾并返回
-			return newStr.append(tempCount).append(tempChar).toString();
-		} else {
-			return "1" + tempChar;
 		}
+		return newStr.append(tempCount).append(tempChar).toString();
 	}
 
 	public static void main(String[] args) {
