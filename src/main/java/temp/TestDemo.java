@@ -38,15 +38,8 @@ public class TestDemo {
 		System.out.println(checkRepitation(Arrays.stream(items).collect(Collectors.toList())));
 	}
 
-public static void main(String[] args) {
-	Object o = new Object();
-	System.out.println("==== 加锁前 ==== ");
-	System.out.println(ClassLayout.parseInstance(o).toPrintable());
-	System.out.println("==== 加锁后 ==== ");
-	synchronized (o){
-		System.out.println(ClassLayout.parseInstance(o).toPrintable());
+
+	public static void main(String[] args) {
+
 	}
-	System.out.println("==== 释放锁 ==== ");
-	System.out.println(ClassLayout.parseInstance(o).toPrintable());
-}
 }

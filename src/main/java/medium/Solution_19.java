@@ -75,7 +75,7 @@ public class Solution_19 {
 
 	public static void main(String[] args) {
 		ListNode tail = new ListNode(0);
-//		ListNode next1 = new ListNode(1, tail);
+		ListNode next1 = new ListNode(1, tail);
 //		ListNode next2 = new ListNode(2, next1);
 //		ListNode next3 = new ListNode(3, next2);
 //		ListNode next4 = new ListNode(4, next3);
