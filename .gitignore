@@ -4,6 +4,8 @@
 node_modules
 /target/
 /.classpath
+.idea
+.idea/*
 /tmp/
 /.settings/
 /.idea/
