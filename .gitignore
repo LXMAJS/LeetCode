@@ -15,6 +15,5 @@ node_modules
 /**/target
 /**/rebel-remote.xml
 /**/rebel.xml
-
 /.scannerwork/
 .idea/workspace.xml
