@@ -1,5 +1,7 @@
 package medium;
 
+import java.util.HashMap;
+
 /**
  * 3. 无重复字符的最长子串
  *
@@ -33,10 +35,31 @@ package medium;
 public class Solution_3 {
 
 	public static int lengthOfLongestSubstring(String s) {
-		return 0;
+		HashMap<Character, Integer> indexes = new HashMap<>();
+		char[] chars = s.toCharArray();
+		int maxLength = 0;
+		int windowSize = 0;
+		int lastIndex = 0;
+		for (int i = 0; i < chars.length; i++) {
+			if (indexes.containsKey(chars[i])) {
+				// 如果hashmap中有这个字符，
+				// 则将这个字符对应的上一个索引位置找出来，
+				// 计算i和索引之间的距离，即当前的最长串，
+				// 如果 maxLength 比最长串小，则更新 maxLength
+				lastIndex = Math.max(lastIndex, indexes.get(chars[i]));
+				maxLength = Math.max(maxLength, windowSize);
+				windowSize = i - lastIndex;
+				indexes.put(chars[i], i);
+			} else {
+				indexes.put(chars[i], i);
+				windowSize++;
+			}
+		}
+		return Math.max(maxLength, windowSize);
 	}
 
 	public static void main(String[] args) {
-
+		String s = "abba";
+		System.out.println(lengthOfLongestSubstring(s));
 	}
 }

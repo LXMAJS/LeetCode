@@ -49,25 +49,20 @@ public class Solution_26 {
 			return nums.length;
 		}
 		// 定义双指针
-		int i = 0;
-		int j = 1;
+		int j = 0;
 		// 执行循环判断
-		for (; j < nums.length; ) {
-			if (nums[j] != nums[i]) {
+		for (int i = 1; i < nums.length; i++) {
+			if (nums[i] != nums[j]) {
 				// 如果前后两个数不想等，那么可以先赋值，再+1
-				nums[i + 1] = nums[j];
-				i += 1;
-				j += 1;
-			} else {
-				// 如果相等，那么j可以继续+1，i 原地停留
-				j += 1;
+				nums[++j] = nums[i];
 			}
 		}
-		return i + 1;
+		return ++j;
 	}
 
 	public static void main(String[] args) {
-		int[] nums = {0,0,1,1,1,2,2,3,3,4};
+//		int[] nums = {0,0,1,1,1,2,2,3,3,4};
+		int[] nums = {1,1,2};
 		System.out.println(removeDuplicates(nums));
 		System.out.println("数组元素：");
 		for (int num : nums) {

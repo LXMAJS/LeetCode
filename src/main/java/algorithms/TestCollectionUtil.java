@@ -79,6 +79,7 @@ class TestCollectionUtil {
 //		testSortTime(new MergeSortBottomUp());
 //		testSortTime(new QuickSort());
 //		testFunction(new QuickSortTwoWays());
-		testFunction(new QuickSortThreeWays());
+//		testSortTime(new QuickSortThreeWays());
+		testFunction(new MaxHeapSort());
 	}
 }
